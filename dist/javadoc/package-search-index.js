@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ATV_2_UC10_Aluno_Glauber"},{"l":"conexao"},{"l":"dao"},{"l":"view"}];updateSearchResults();
