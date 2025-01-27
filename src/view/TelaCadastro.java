@@ -18,6 +18,10 @@ import javax.swing.table.TableRowSorter;
  */
 public class TelaCadastro extends javax.swing.JFrame {
 
+    /**
+     *
+     * @author glaub CRIAR UM CLASSE SERVICE PARA TODOS ESSAS CHAMADAS
+     */
     private void preencherTabela() {
         /**
          * Preenchendo a tabela
@@ -558,7 +562,9 @@ public class TelaCadastro extends javax.swing.JFrame {
 
     private void btnPesquisaIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisaIdActionPerformed
 
-        /**Pesquisar id */
+        /**
+         * Pesquisar id
+         */
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         try {
 
@@ -590,7 +596,9 @@ public class TelaCadastro extends javax.swing.JFrame {
 
     private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
 
-        /**Editar através da info resgatada da tabela ou campos */
+        /**
+         * Editar através da info resgatada da tabela ou campos
+         */
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         int id = Integer.parseInt(txtIdResult.getText());
 
@@ -626,7 +634,9 @@ public class TelaCadastro extends javax.swing.JFrame {
 
     private void btnCarregarCamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCarregarCamposActionPerformed
 
-        /**Carregar campos atraves da selecao na tabela */
+        /**
+         * Carregar campos atraves da selecao na tabela
+         */
         int linhaSelecionada = tblFilmes.getSelectedRow();
         if (linhaSelecionada == -1) {
             JOptionPane.showMessageDialog(null, "Selecione um item da tabela para continuar ");
@@ -646,7 +656,9 @@ public class TelaCadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowGainedFocus
 
     private void txtPesquisaComFiltrosCaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_txtPesquisaComFiltrosCaretUpdate
-        /**Case combobox filtros */
+        /**
+         * Case combobox filtros
+         */
         switch (cmbFilter.getSelectedIndex()) {
             case 2:
 
@@ -668,7 +680,9 @@ public class TelaCadastro extends javax.swing.JFrame {
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
 
-        /**Excluir do banco */
+        /**
+         * Excluir do banco
+         */
         carregarCampos();
         FilmesDAO filmesDAO = new FilmesDAO();
         int idResultado = Integer.parseInt(txtId.getText());
@@ -772,8 +786,9 @@ public class TelaCadastro extends javax.swing.JFrame {
     private javax.swing.JTextField txtPesquisaId;
     // End of variables declaration//GEN-END:variables
 
-   
-    /**metodo para carregar campos busca os valores e preenche o txtfield */
+    /**
+     * metodo para carregar campos busca os valores e preenche o txtfield
+     */
     private void carregarCampos() {
         try {
             int selectedRow = tblFilmes.getSelectedRow();
