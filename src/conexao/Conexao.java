@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
-    //Conxao mysql
-    
+    //Conexao mysql
+
     public Connection getConexao() {
         try {
             Connection conn = DriverManager.getConnection(
