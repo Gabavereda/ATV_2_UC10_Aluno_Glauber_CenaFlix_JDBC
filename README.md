@@ -2,6 +2,10 @@
 
 Este projeto foi desenvolvido como parte das atividades do curso de Análise e Desenvolvimento de Sistemas, que estou cursando pelo SENAC. O objetivo principal é criar um sistema de gerenciamento de podcasts, incluindo funcionalidades de cadastro e controle de acesso com diferentes níveis de permissão.
 
+## todo
+
+pretendo adicionar uma classe de service e criar algumas camadas para aplicar SOLID  com efetividade.
+
 ## Funcionalidades
 
 - **Cadastro de Podcast**: Permite o cadastro, edição e exclusão de podcasts.
